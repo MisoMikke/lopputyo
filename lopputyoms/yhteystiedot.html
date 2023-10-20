@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <title>Yhteystiedot</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link href="./css/yhteystiedotcss.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navi1"></nav>
+        <div id="main">
+        <div id="otsikointi" class="container-sm m-5">
+        <h1>Yhteystiedot</h1>
+        <p>Kotkantien maalaus ja tapetointi ky. Y-tunnus 1455011-0<br>
+            <i class="bi bi-geo-alt"></i> Kotkantie 3, 90100 Oulu. Auki arkisin klo 10-18<br>
+            <i class="bi bi-telephone"></i> Puhelin: 044 999 888 99<br>
+            <i class="bi bi-envelope"></i> Sähköposti: info@kotkantienmaalaus.fi</p>
+        </div>
+        <div class="container-sm">
+          <!--yhteydenottolomake, kentissä voisi olla required jos on pakko täyttää se, mutta tässä jompikumpi kenttä riittää-->
+          <p class="text-center"><u>Jätä yhteydenottopyyntö, niin olemme sinuun yhteydessä</u></p>
+      </div>
+      <div class="container-sm mx-5 mb-5">
+      <form>
+          <div class="form-group">
+              <label for="nimi">Nimi</label>
+              <input type="text" class="form-control" id="nimi" placeholder="teidän tai yrityksenne nimi">
+            </div>
+          <div class="form-group">
+              <label for="puhnro">Puhelinnumero</label>
+              <input type="text" class="form-control" id="puhnro" placeholder="puhelinnumeronne">
+            </div>
+          <div class="form-group">
+            <label for="sposti">Sähköpostiosoite</label>
+            <input type="email" class="form-control" id="sposti" aria-describedby="lisatietoa" placeholder="sähköpostisi">
+            <small id="lisatietoa" class="form-text text-muted">Lisää puhelinnumero tai sähköposti, niin olemme yhteydessä teihin pian.</small>
+          </div>
+          <button type="submit" class="btn btn-primary">Lähetä</button>
+        </form>
+      </div>
+        <div class="container col-sm-4">
+            <p>Tervetuloa tutustumaan paikanpäälle maali vaihtoehtoihimme 
+                ja tapetti valikoimaamme.</p>
+        </div>
+        <div id="mappi" class="container col-sm-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1686.0772776806998!2d25.510879499999994!3d65.0014705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cd5aac2e0dcb%3A0xd0f738d563fe562d!2sKotkantie%203%2C%2090250%20Oulu!5e0!3m2!1sfi!2sfi!4v1696573239482!5m2!1sfi!2sfi"
+        width="500" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container col-sm-4">
+            <p>tai ota rohkeasti yhteyttä ja pyydä tarjous.<br>
+            Löydät meidät myös <i class="bi bi-instagram"></i><a href=https://www.instagram.com>Instagramista</a> ja <i class="bi bi-youtube"></i><a href=https://www.youtube.com>Youtubesta</a>!</p>
+        </div>
+        <hr>
+        <div class="container-sm secondary">
+          <p class="small text-center"><i class="bi bi-cookie"></i> Evästeiden hallinta<br><i class="bi bi-lock"></i> Tietosuojaseloste</p>
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./js/perusscript.js"></script>
+    </body>

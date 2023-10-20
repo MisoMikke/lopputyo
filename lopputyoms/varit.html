@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <!--Linkit että saadaan bootstrap ja sen ikonit, jquery, javascript ja oma css tiedosto toimimaan-->
+        <title>Varien testaus</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link href="./css/varitcss.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--jquery missä vaihdetaan teemaa ja resetoidaan taustaväri ja tekstikenttä-->
+        <script>
+            $(document).ready(function(){
+            $("#tumman").click(function(){
+            $("#teema2").show();
+            $("#teema1").hide();
+          });
+          $("#vaalean").click(function(){
+            $("#teema1").show();
+            $("#teema2").hide();
+          });
+          $("#reset1").click(function(){
+            $("#tausta1").css("fill","rgb(169, 169, 169)");
+            $("#maalikentta1").val(" ");
+          });
+          $("#reset2").click(function(){
+            $("#tausta2").css("fill","rgb(169, 169, 169)");
+            $("#maalikentta2").val(" ");
+          });
+        });
+        </script>
+        <nav id="navi1"></nav>
+        <div id="main">
+        <div id="otsikointi" class="container-sm m-5">
+        <h1>Värien testaus</h1>
+        <p>Tällä sivulla pääset kokeilemaan tyypillisimpiä värivaihtoehtojamme</p>
+        </div>
+        <!--värejä vasempaan kuvaan-->
+        <div class="d-flex flex-row m-1 justify-content-center">
+            <svg id="fiesta" width="50" height="50">
+                <circle id="Fiesta #DD4132" cx="20" cy="20" r="15" onclick="fiesta(); showName(this)" style="fill:#DD4132;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="jester red" width="50" height="50">
+                <circle id="Jester Red #9E1030" cx="20" cy="20" r="15" onclick="jester(); showName(this)" style="fill:#9E1030;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="turmeric" width="50" height="50">
+                <circle id="Turmeric #FE840E" cx="20" cy="20" r="15" onclick="turmeric(); showName(this)" style="fill:#FE840E;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="living coral" width="50" height="50">
+                <circle id="Living Coral #FF6F61" cx="20" cy="20" r="15" onclick="livcor(); showName(this)" style="fill:#FF6F61;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="pink peacock" width="50" height="50">
+                <circle id="Pink Peacock #C62168" cx="20" cy="20" r="15" onclick="pinkpea(); showName(this)" style="fill:#C62168;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="pepper stem" width="50" height="50">
+                <circle id="Pepper Stem #8D9440" cx="20" cy="20" r="15" onclick="peppers(); showName(this)" style="fill:#8D9440;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="aspen gold" width="50" height="50">
+                <circle id="Aspen Gold #FFD662" cx="20" cy="20" r="15" onclick="aspeng(); showName(this)" style="fill:#FFD662;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="princess blue" width="50" height="50">
+                <circle id="Princess Blue #00539C" cx="20" cy="20" r="15" onclick="princessb(); showName(this)" style="fill:#00539C;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="toffee" width="50" height="50">
+                <circle id="Toffee #755149" cx="20" cy="20" r="15" onclick="toffee(); showName(this)" style="fill:#755139;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="mango mojito" width="50" height="50">
+                <circle id="Mango Mojito #D69C2F" cx="20" cy="20" r="15" onclick="mangom(); showName(this)" style="fill:#D69C2F;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg> 
+            <svg id="terrarium moss" width="50" height="50">
+                <circle id="Terrarium Moss #616247" cx="20" cy="20" r="15" onclick="tmoss(); showName(this)" style="fill:#616247;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="sweet lilac" width="50" height="50">
+                <circle id="Sweet Lilac #E8B5CE" cx="20" cy="20" r="15" onclick="sweetl(); showName(this)" style="fill:#E8B5CE;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="soybean" width="50" height="50">
+                <circle id="Soybean #D2C29D" cx="20" cy="20" r="15" onclick="soybean(); showName(this)" style="fill:#D2C29D;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="eclipse" width="50" height="50">
+                <circle id="Eclipse #343148" cx="20" cy="20" r="15" onclick="eclipse(); showName(this)" style="fill:#343148;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="sweetcorn" width="50" height="50">
+                <circle id="Sweet Corn #F0EAD6" cx="20" cy="20" r="15" onclick="scorn(); showName(this)" style="fill:#F0EAD6;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="browngranite" width="50" height="50">
+                <circle id="Brown Granite #615550" cx="20" cy="20" r="15" onclick="bgranite(); showName(this)" style="fill:#615550;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+        </div>
+        <!--kuvat ja svg taustat-->
+        <div class="d-flex flex-row align-items-center justify-content-center m-1 p-1" style="position: relative;">
+        <svg class="img-fluid" width="615" height="508">
+            <rect id="tausta1" width="615" height="508" style="fill:rgb(169, 169, 169);stroke-width:1;stroke:rgb(0,0,0)"/>
+        </svg>
+        <svg class="img-fluid" width="615" height="508">
+            <rect id="tausta2" width="615" height="508" style="fill:rgb(169, 169, 169);stroke-width:1;stroke:rgb(0,0,0)"/>
+        </svg>
+        <img id="teema1" class="img-fluid" src="./kuvat/vaaleateema.png" alt="huoneteema1" style="position: absolute; top: 1; left: 1;">
+        <img id="teema2" class="img-fluid" src="./kuvat/tummateema.png" alt="huoneteema2" style="position: absolute; top: 1; left: 1; display: none;">
+        </div>
+        <!--loputväreistä sinne oikealle puolelle-->
+        <div class="d-flex flex-row justify-content-center">
+            <svg id="fiesta" width="50" height="50">
+                <circle id="Fiesta #DD4132" cx="20" cy="20" r="15" onclick="fiesta2(); showName2(this)" style="fill:#DD4132;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="jester red" width="50" height="50">
+                <circle id="Jester Red #9E1030" cx="20" cy="20" r="15" onclick="jester2(); showName2(this)" style="fill:#9E1030;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="turmeric" width="50" height="50">
+                <circle id="Turmeric #FE840E" cx="20" cy="20" r="15" onclick="turmeric2(); showName2(this)" style="fill:#FE840E;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="living coral" width="50" height="50">
+                <circle id="Living Coral #FF6F61" cx="20" cy="20" r="15" onclick="livcor2(); showName2(this)" style="fill:#FF6F61;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="pink peacock" width="50" height="50">
+                <circle id="Pink Peacock #C62168" cx="20" cy="20" r="15" onclick="pinkpea2(); showName2(this)" style="fill:#C62168;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="pepper stem" width="50" height="50">
+                <circle id="Pepper Stem #8D9440" cx="20" cy="20" r="15" onclick="peppers2(); showName2(this)" style="fill:#8D9440;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="aspen gold" width="50" height="50">
+                <circle id="Aspen Gold #FFD662" cx="20" cy="20" r="15" onclick="aspeng2(); showName2(this)" style="fill:#FFD662;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="princess blue" width="50" height="50">
+                <circle id="Princess Blue #00539C" cx="20" cy="20" r="15" onclick="princessb2(); showName2(this)" style="fill:#00539C;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="toffee" width="50" height="50">
+                <circle id="Toffee #755149" cx="20" cy="20" r="15" onclick="toffee2(); showName2(this)" style="fill:#755139;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="mango mojito" width="50" height="50">
+                <circle id="Mango Mojito #D69C2F" cx="20" cy="20" r="15" onclick="mangom2(); showName2(this)" style="fill:#D69C2F;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg> 
+            <svg id="terrarium moss" width="50" height="50">
+                <circle id="Terrarium Moss #616247" cx="20" cy="20" r="15" onclick="tmoss2(); showName2(this)" style="fill:#616247;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="sweet lilac" width="50" height="50">
+                <circle id="Sweet Lilac #E8B5CE" cx="20" cy="20" r="15" onclick="sweetl2(); showName2(this)" style="fill:#E8B5CE;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="soybean" width="50" height="50">
+                <circle id="Soybean #D2C29D" cx="20" cy="20" r="15" onclick="soybean2(); showName2(this)" style="fill:#D2C29D;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="eclipse" width="50" height="50">
+                <circle id="Eclipse #343148" cx="20" cy="20" r="15" onclick="eclipse2(); showName2(this)" style="fill:#343148;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="sweetcorn" width="50" height="50">
+                <circle id="Sweet Corn #F0EAD6" cx="20" cy="20" r="15" onclick="scorn2(); showName2(this)" style="fill:#F0EAD6;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            <svg id="browngranite" width="50" height="50">
+                <circle id="Brown Granite #615550" cx="20" cy="20" r="15" onclick="bgranite2(); showName2(this)" style="fill:#615550;stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+        </div>
+        <!--Teemanapit, maalinimi kentät ja resetit-->
+        <div class="d-flex justify-content-center">
+            <div class="btn-group">
+                <button id="vaalean" type="button" class="btn btn-sm m-1 btn-outline-secondary">Vaalea teema</button>
+                <input type="text" id="maalikentta1" readonly>
+                <button id="reset1" type="button" class="btn btn-sm m1 btn-outline-primary">Resetoi väri vasen</button>
+                <button id="reset2" type="button" class="btn btn-sm m1 btn-outline-success">Resetoi väri oikea</button>
+                <input type="text" id="maalikentta2" readonly>
+                <button id="tumman" type="button" class="btn btn-sm m-1 btn-outline-dark">Tumma teema</button>
+            </div>
+        </div>
+        <!--viiva ja "footti"-->
+        <hr>
+        <div class="container-sm secondary">
+            <p class="small text-center"><br>Kotkantien maalaus ja tapetointi ky<br><i class="bi bi-geo-alt"></i> Kotkantie 3, 90100 Oulu<br>
+                <i class="bi bi-telephone"></i> 044 999 888 99<br><i class="bi bi-envelope"></i> info@kotkantienmaalaus.fi<br>
+                <i class="bi bi-youtube"></i> <a href=https://www.youtube.com>Youtubessa</a> ja <i class="bi bi-instagram"></i> <a href=https://www.instagram.com>Instagramissa</a> olemme nimellä kotkantienmaalaus&tapetointi<br>
+                <i class="bi bi-cookie"></i> Evästeiden hallinta<br><i class="bi bi-lock"></i> Tietosuojaseloste</p>
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="./js/varitscript.js"></script>
+    </body>
+</html>
