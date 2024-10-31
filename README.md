@@ -1,5 +1,5 @@
 # Lopputyö
-Selainohjelmointi kokonaisuuden lopputyö, lokakuu 2023
+Selainohjelmointi kurssi kokonaisuuden "lopputyö", lokakuu 2023
 
 Opiskeltuamme html, css, javascript, jquery, bootstrap ja svg käyttöä, saimme lopputehtäväksi luoda www sivut kuvitteelliselle yritykselle, kotkantien maalaus ja tapetoinnille.
 
@@ -7,3 +7,4 @@ Sivut jaetaan osioihin etusivu, palvelut, väritestaus, galleria ja yhteystiedot
 
 Lopputyötä tein itsekseni, käyttäen apuna omia vanhoja projektejani, videoita, tekoälyä, foorumeita, bootstrap sivuja ja w3schoolsia.
 Tehtävän ohjeistuksessa suositeltiin käyttämään valmista sivupohjaa, mutta omaksi harjoituksekseni halusin tehdä sivut omilla taidoillani.
+Ohjelmointi harjoitukset jatkuvat ja kehitystä tulee lisää
